@@ -9,6 +9,10 @@
             {
                 return "Player 1";
             }
+            elseif ($first_input == "paper" && $second_input == "scissors")
+            {
+                return "Player 2"; 
+            }
         }
 
     }
