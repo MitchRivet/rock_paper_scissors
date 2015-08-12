@@ -1,11 +1,16 @@
 <?php
 
-    class RockPaperScissors {
+    class RockPaperScissors
+    {
 
-          function rockPaperScissors($first_input, $second_input) {
-
-            
-
-          }
+        function playRockPaperScissors($first_input, $second_input)
+        {
+            if ($first_input == "rock" && $second_input == "scissors")
+            {
+                return "Player 1";
+            }
+        }
 
     }
+
+?>
