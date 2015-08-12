@@ -17,6 +17,7 @@
             {
                 return "Player 2";
             }
+
             elseif (($first_input == "rock" && $second_input == "rock") ||
             ($first_input == "scissors" && $second_input == "scissors") ||
             ($first_input == "paper" && $second_input == "paper"))
