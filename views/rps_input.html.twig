@@ -1,34 +1,48 @@
 <html>
   <head>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css'>
     <title>Rock, Paper, Scissors</title>
   </head>
-  <body>
-    <h1>Play Rock, Paper, Scissors</h1>
-    <h2>Player One</h2>
+  <body background="images/brick.jpg">
+    <div class="container">
+    <h1 class="text-center" style="text-color:#A0B4C0">Play Rock, Paper, Scissors</h1>
 
-        <form action='/rps_results'>
-            <input type='radio' name='first_input' value='rock' checked>Rock
-            <br>
-            <input type='radio' name='first_input' value='paper' checked>Paper
-            <br>
-            <input type='radio' name='first_input' value='scissors' checked>Scissors
-            <br>
+    <div class="col-lg-6" style="background-color:#A0B4C0;">
+      <h2>Player One</h2>
 
-            <h2>Player Two</h2>
+          <form action='/rps_results'>
+            <div class="form-group">
+              <input type='radio' name='first_input' value='rock' checked><img src="images/rock.jpg" width="50px" height="50px"/>
+            </div>
+              <div class="form-group">
+              <input type='radio' name='first_input' value='paper' checked><img src="images/paper.jpg" width="50px" height="50px"/>
+            </div>
+              <div class="form-group">
+              <input type='radio' name='first_input' value='scissors' checked><img src="images/scissors.jpg" width="50px" height="50px"/>
+            </div>
+      </div>
 
-            <input type='radio' name='second_input' value='rock' checked>Rock
-            <br>
-            <input type='radio' name='second_input' value='paper' checked>Paper
-            <br>
-            <input type='radio' name='second_input' value='scissors' checked>Scissors
-            <br>
+      <div class="col-lg-6" style="background-color:#A0B4C0;">
+
+      <h2>Player Two</h2>
+          <div class="form-group">
+              <input type='radio' name='second_input' value='rock' checked><img src="images/rock.jpg" width="50px" height="50px"/>
+            </div>
+            <div class="form-group">
+              <input type='radio' name='second_input' value='paper' checked><img src="images/paper.jpg" width="50px" height="50px"/>
+            </div>
+            <div class="form-group">
+              <input type='radio' name='second_input' value='scissors' checked><img src="images/scissors.jpg" width="50px" height="50px"/>
+            </div>
+      </div>
 
 
-            <button type='submit'>Go!</button> 
-        </form>
 
-
-
+      </div>
+      <br>
+      <button type='submit' class="btn center-block">Go!</button>
+      </form>
 
   </body>
 </html>
