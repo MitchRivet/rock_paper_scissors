@@ -21,7 +21,12 @@
     $app->get("/rps_results", function() use ($app) {
         $new_game = new RockPaperScissors;
         $game_result = $new_game->playRockPaperScissors($_GET['first_input'], $_GET['second_input']);
+
+        // $new_score = new RockPaperScissors;
+        // $display_score = $new_score->keepScore($_GET['first_input'], $_GET['second_input']);
+
         return $app ['twig']->render('rps_result.html.twig', array('result' => $game_result));
+        // return $app ['twig']->render('rps_result.html.twig', array('score' => $display_score));
     });
 
     return $app;

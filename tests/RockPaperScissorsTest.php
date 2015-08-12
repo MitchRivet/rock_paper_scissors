@@ -88,6 +88,17 @@
               //Assert
               $this->assertEquals("Draw", $result);
           }
+
+          function test_keep_score_player1()
+          {
+            $test_KeepScore = new RockPaperScissors;
+            $first_input = "rock";
+            $second_input = "scissors";
+
+            $result = $test_KeepScore->keepScore($first_input, $second_input);
+
+            $this->assertEquals(1, $result);
+          }
     }
 
 ?>
