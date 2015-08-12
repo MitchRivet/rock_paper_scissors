@@ -11,7 +11,11 @@
             }
             elseif ($first_input == "paper" && $second_input == "scissors")
             {
-                return "Player 2"; 
+                return "Player 2";
+            }
+            elseif ($first_input == "paper" && $second_input == "paper")
+            {
+                return "Draw"; 
             }
         }
 
